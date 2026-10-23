@@ -35,3 +35,37 @@
     detected: '2026-10-22'
   status: not-a-workflow
   arazzo: null
+- slug: bitcoin-arch-user-repository-aur
+  label: Arch User Repository (AUR)
+  partner_name: Arch User Repository (AUR)
+  category: official CLI (Arch User Repository (AUR))
+  type: register
+  channel: package-registry
+  evidence: https://aur.archlinux.org/packages/bitcoin-git
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Arch User Repository (AUR) (public package index)
+    spec_file: null
+    packages:
+    - name: bitcoin-git
+      kind: aur
+      version: 31.99.0.r49473-1
+      released: '2026-06-27'
+      released_field: AUR LastModified
+      out_of_date: false
+      lapsed: false
+      page: https://aur.archlinux.org/packages/bitcoin-git
+      upstream: https://bitcoin.org
+      cli: 'AUR description: Bitcoin is a peer-to-peer network based digital currency. This package provides '
+      repo_leg: domain:bitcoin.org
+      publisher_leg: artifact-github-org:bitcoin
+      matched_by: domain
+    current: true
+    signal_note: 'the provider''s own command-line tool packaged for Arch Linux (community-maintained PKGBUILD whose
+      upstream and source artifact are the provider''s): distribution, not an integration; lapsed = flagged out-of-date
+      or not updated in 24 months'
+    detected_by: sweep-aur-vendor-cli-packages.py
+    detected: '2026-10-23'
+  status: not-a-workflow
+  arazzo: null
